@@ -1,0 +1,29 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+}
+
+.form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .field {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  .submitbtn {
+    align-self: flex-end;
+    width: 80px;
+  }
+  
