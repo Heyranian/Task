@@ -1,0 +1,18 @@
+.th {
+  padding: 0 1rem;
+  
+}
+
+.tables th{
+    border:1px solid red;
+}
+.tables{
+    height: 100%;
+    width:100%;
+    border: 3px solid black;
+    overflow: scroll;
+}
+
+.tables tr{
+    border:1px solid black;
+}

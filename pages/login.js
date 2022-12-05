@@ -6,6 +6,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 
 export default function Login() {
   const formik = useFormik({
@@ -41,7 +42,7 @@ export default function Login() {
   const notify = () => toast("welcome");
   const wrong = () => toast("invalid");
 
-  return (
+  return (<>
     <form className={Styles.form} onSubmit={formik.handleSubmit}>
       <div className={Styles.field}>
         <label htmlFor="email">Email Address</label>
@@ -70,5 +71,8 @@ export default function Login() {
       </button>
       <ToastContainer />
     </form>
+    <Link href="/getProduct">go to AG Grid</Link>
+    </>
+    
   );
 }
